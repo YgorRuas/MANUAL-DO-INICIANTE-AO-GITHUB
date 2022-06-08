@@ -1,1 +1,114 @@
-a
+Passo a passo
+
+1º Acesse o site https://github.com/
+
+2º Crie uma conta, preenchendo os campos com os dados solicitados
+
+Após isso é possível visualizar a tela principal já logada ao usuário.  😉
+
+3º Crie um repositório executando as sequências:
+
+	Vá para seu perfil e clique no botão “Repositories” e no botão verde “New”
+	Insira o nome que você deseja para o repositório no campo “Repository name”
+	A descrição do repositório é opcional, mas bastante incentivada caso queira dar detalhes sobre seu repositório.
+	Selecione a opção “Public” caso queira que todos visualizem seu repositório ou “Private” caso você prefira selecionar quem pode visualizar seu repositório.
+	Marque a caixa Add a README file para adicionar um arquivo README que será o cartão de visita do seu repositório, caso você desejar ter algum.
+	No campo Add .gitignore você seleciona o tipo de arquivo para ser ignorado pelo GitHub, com essa opção a plataforma usa um arquivo oculto .gitignore para indicar quais os tipos de arquivos não devem ser rastreados para versionamento.
+	Por último, escolha o tipo de licença entre as opções disponíveis, caso você queira que seu código tenha as permissões e restrições de uso de acordo com cada licença, por isso é válido pesquisar as informações contidas em cada tipo de licença.
+	Após todos os campos preenchidos e selecionados, basta clicar no botão “Create repository” e seu repositório estará criado.
+Na página do seu repositório é possível verificar que os arquivos selecionados na criação do repositório estão listados como: . gitignore, LICENSE e README.md.
+Você pode criar um arquivo dentro do seu repositório. Para isso, é preciso clicar em “Add file” na parte superior da lista de arquivos e, em seguida, clicar em “Create new file”
+Na página que abrir você nomeia o seu arquivo e adiciona uma extensão para ele, por exemplo .py
+É possível editar o arquivo clicando sobre o nome dele na lista de arquivos. Na página que abrir clique sobre o ícone do lápis ✎ “Edit this file” e no campo “Edit file” da página que carregar faça suas alterações.
+Ao final da página em que você está há uma seção denominada “Commit new file” e funciona como uma anotação do que foi feito no arquivo. É recomendável que seja preenchido pelo menos o primeiro campo, indicando o que você fez naquele arquivo.
+Clique no botão verde “Commit changes” para salvar as alterações.
+Como faço para visualizar os commits que foram gerados?
+Para visualizar os commits, basta clicar no ícone de relógio com a contagem de commits que está logo acima no lado direito da lista de arquivos.
+Agora, imagine que você alterou um arquivo no GitHub e precisar retornar para ele. É possível voltar no tempo entrando na visualização dos commits e clicando nas setas <> que aparecem no lado direito de cada commit
+Ufa, assim você não perde a versão anterior do arquivo, caso a versão atual não tenha ficado melhor 😅
+Para saber mais: A sequência alfanumérica que está ao lado do botão <> é um histórico do que foi feito naquele commit, o que foi deletado e o que foi acrescentado.
+
+INTERFACE COM O COMPUTADOR
+
+É possível criar uma pasta no computador que seja interoperável com a plataforma do GitHub. Para isso, siga os passos abaixo:
+1º Crie uma pasta no computador (atenção para o tamanho do diretório onde a pasta será criada, pois poderá ocasionar erros futuros) 
+Dentro da área da pasta clique com o botão direito e selecione Git Bash Here. Irá abrir um terminal do GitHub. Isso mesmo! A famosa tela preta, onde você digita os comandos para serem executados
+Na plataforma do GitHub, clique no botão verde “Code” que está acima da lista de arquivos e, em seguida, verifique se está na opção HTTPS. Então, clique no ícone de cópia que está após o endereço do seu repositório.
+Vá para o terminal, digite [git clone] e pressione os botões shift + insert no teclado ou pressione o botão direito do mouse e clique em paste para colar o endereço que foi copiado na etapa anterior.
+Agora verifique se os arquivos que estavam no seu repositório do GitHub estão na pasta que você criou.
+Depois digite cd e pressione tab (para aparecer o nome da pasta que você precisa) + enter para acessar o diretório com os arquivos que foram trazidos do GitHub para a pasta.
+
+ATUALIZAR ARQUIVOS ENTRE O COMPUTADOR E O GITHUB
+
+Quando você fizer alterações em algum dos arquivos que estão na pasta ou no GitHub, você precisa que ele esteja atualizado em ambos os locais. Sendo assim, siga os passos após as alterações no arquivo:
+Atenção! Todos os passos abaixo são executados no terminal do GitHub:
+
+1º Digite [git status] e pressione enter para mostrar o status com as modificações no arquivo, observe que o nome do arquivo está na cor vermelha.
+
+2º Digite [git add] para informar que você deseja que as alterações sejam consideradas e pressione enter e, em seguida, digite [git status”]. Verifique se o nome do arquivo foi modificado para a cor verde.
+
+3º Digite [git commit -m “escreva uma nota para a modificação aqui”] e pressione enter.
+
+4º Digite [git push] para colocar o arquivo no servidor, dessa forma ao atualizar a plataforma do GitHub o arquivo modificado aparecerá lá.
+
+E se for alterado o arquivo na plataforma do GitHub?
+É simples, basta digital [git pull] no terminal para trazer o arquivo atualizado da plataforma do GutHub para a pasta.
+
+QUERO CRIAR UMA CÓPIA DO MEU REPOSITÓRIO SEM ALTERAR O MEU ATUAL! É POSSÍVEL?
+
+Vamos voltar para a plataforma do Git Hub.
+Na parte superior esquerda você vai encontrar a opção de criar um branch, que significa o ramo do seu repositório. Esse ramo pode ser entendido como um “mundo paralelo” em que eu faço uma cópia do mundo em que eu estava e começo uma nova vida no outro, com os mesmos “personagens e cenários”, mas podendo agora dar outro rumo para a minha vida sem afetar o meu repositório inicial.
+1º Após criar um ramo em seu repositório puxamos ele para o Git Bash, se você se lembra ela é a nossa ferramenta no notebook que faz a ligação da pasta que criamos no nosso computador com o site do GitHub.
+
+2º Por meio do git pull nós vamos puxar todas as informações que atualizamos no site e usaremos o checkout em relação ao novo branch para finalizar as alterações que foram feitas.
+
+3º Depois disso, usamos o checkout em relação ao ramo inicial e voltamos novamente por meio do checkout para o novo branch.
+
+O checkout é usado no formato “git checkout” e o nome do repositor, por exemplo: git checkout aprendendo.3 (Considere aprendendo.3 como o nome do repositor que estou checando).
+Esses processos foram realizados para fazer a verificação do ramo criado.
+
+SE MODIFICARMOS A NOSSA PASTA NO NOTEBOOK O GIT BASH VAI IDENTIFICAR?
+A reposta é sim! Vejamos a seguir:
+
+1º Vamos criar um documento dentro da pasta inicial que fizemos no notebook, pode ser um simples documento em txt, escreva algo nele, por exemplo: print (“Olá, estou criando um novo documento na pasta do meu repositório”).
+
+2º Após isso usa-se git status para mostrar como está estado do meu ramo.
+
+Aparecerá que tem um arquivo novo e em letras vermelhas você verá o nome do arquivo que você acabou de criar, mas não adicionou completamente no seu repositório.  Aparecerá uma mensagem de aviso assim: 
+“Untracked files:
+  		(use "git add <file>..." to include in what will be committed)
+        		arrquivo_novo.txt.txt”
+
+E para resolver isso será preciso adicionar o novo documento criado por meio do (git add .)
+
+3º Escreva “git add .” na sua linha de códigos do Git Bash e não esqueça do ponto (.) após a palavra “add”.
+
+4ºUsamos git status para verificar se está tudo certo.
+
+COMO SALVAR AS ALTERAÇÕES FEITAS NO MEU COMPUTADOR NA VERSÃO ONLINE?
+
+1º Utilizaremos o comando (Git commit -m “descrição da alteração entre aspas”) para salvar as alterações feitas no repositório
+Ex: Git commit -m “essa altereção serve para isso”
+
+2º Em seguida com o comando Git push enviamos essas alterações para a versão online do nosso repositório
+
+E QUANDO EU REALIZO ALTERAÇÕES NO SITE E QUERO SALVAR NO COMPUTADOR?
+Para fazer o contrário e atualizar o Git Bash com a versão que sofreu alterações online, basta utilizar o comando git pull!
+
+FINALIZANDO A PRÁTICA
+
+Para finalizar voltamos para a interface principal do Git hub.
+1º Selecione Pull requests (Se você imaginar a tela do seu notebook como um plano cartesiano, dividindo-o nos eixos das ordenadas e das abcissas, a opção “Pull requests” estaria no segundo quadrante da sua tela.)
+
+2º Após essa etapa, aperte New Pull request.
+Nesse ponto estamos na parte que vamos juntar as alterações dos dois ramos, podendo selecionar qual a direção que as alterações serão efetuadas.
+Nesse caso, seguindo essa ordem, será as informações do repositório principal (main), recebendo as mudanças feitas pelo novo ramo criado.(Podemos fazer ao contrário também)
+Portanto, adicionando essas mudanças ao main, não implica na exclusão do novo ramo, o qual continua com sua mesma base de dados.
+Ainda a respeito do main, para efetivar suas alterações é necessário descrever o que foi alterado e, caso queira, é possível fazer uma descrição mais detalhada no campo adequado.
+
+Finalizando assim o passo a passo de como usufruir das funções básicas do Git hub. 😱
+
+
+
+
+
