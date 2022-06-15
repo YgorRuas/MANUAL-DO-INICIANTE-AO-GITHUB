@@ -8,6 +8,11 @@ Após isso é possível visualizar a tela principal já logada ao usuário.  �
 
 3º Crie um repositório executando as sequências:
 
+DRC: poderiam ter caprichado um pouco mais aqui usando algum formato de texto estruturado como Markdown ou ter pulado uma linha entre parágrafos. Da forma como está não está muito fácil de ler.
+
+
+DRC: porque essa parte a seguir está indentada?
+
 	Vá para seu perfil e clique no botão “Repositories” e no botão verde “New”
 	Insira o nome que você deseja para o repositório no campo “Repository name”
 	A descrição do repositório é opcional, mas bastante incentivada caso queira dar detalhes sobre seu repositório.
@@ -16,13 +21,20 @@ Após isso é possível visualizar a tela principal já logada ao usuário.  �
 	No campo Add .gitignore você seleciona o tipo de arquivo para ser ignorado pelo GitHub, com essa opção a plataforma usa um arquivo oculto .gitignore para indicar quais os tipos de arquivos não devem ser rastreados para versionamento.
 	Por último, escolha o tipo de licença entre as opções disponíveis, caso você queira que seu código tenha as permissões e restrições de uso de acordo com cada licença, por isso é válido pesquisar as informações contidas em cada tipo de licença.
 	Após todos os campos preenchidos e selecionados, basta clicar no botão “Create repository” e seu repositório estará criado.
+
 Na página do seu repositório é possível verificar que os arquivos selecionados na criação do repositório estão listados como: . gitignore, LICENSE e README.md.
 Você pode criar um arquivo dentro do seu repositório. Para isso, é preciso clicar em “Add file” na parte superior da lista de arquivos e, em seguida, clicar em “Create new file”
 Na página que abrir você nomeia o seu arquivo e adiciona uma extensão para ele, por exemplo .py
 É possível editar o arquivo clicando sobre o nome dele na lista de arquivos. Na página que abrir clique sobre o ícone do lápis ✎ “Edit this file” e no campo “Edit file” da página que carregar faça suas alterações.
 Ao final da página em que você está há uma seção denominada “Commit new file” e funciona como uma anotação do que foi feito no arquivo. É recomendável que seja preenchido pelo menos o primeiro campo, indicando o que você fez naquele arquivo.
 Clique no botão verde “Commit changes” para salvar as alterações.
+
+DRC: em um arquivo tipo markdown vocês poderiam fazer os cabeçalhos e deixar o texto mais organizado.
+
 Como faço para visualizar os commits que foram gerados?
+
+DRC: eu achei que o significado de commit não ficou claro e já entramos na seção de visualizar os commits...
+
 Para visualizar os commits, basta clicar no ícone de relógio com a contagem de commits que está logo acima no lado direito da lista de arquivos.
 Agora, imagine que você alterou um arquivo no GitHub e precisar retornar para ele. É possível voltar no tempo entrando na visualização dos commits e clicando nas setas <> que aparecem no lado direito de cada commit
 Ufa, assim você não perde a versão anterior do arquivo, caso a versão atual não tenha ficado melhor 😅
@@ -36,9 +48,14 @@ Dentro da área da pasta clique com o botão direito e selecione Git Bash Here. 
 Na plataforma do GitHub, clique no botão verde “Code” que está acima da lista de arquivos e, em seguida, verifique se está na opção HTTPS. Então, clique no ícone de cópia que está após o endereço do seu repositório.
 Vá para o terminal, digite [git clone] e pressione os botões shift + insert no teclado ou pressione o botão direito do mouse e clique em paste para colar o endereço que foi copiado na etapa anterior.
 Agora verifique se os arquivos que estavam no seu repositório do GitHub estão na pasta que você criou.
+
+DRC: é interessante começar a digitar o nome da pasta antes de apertar tab.
+
 Depois digite cd e pressione tab (para aparecer o nome da pasta que você precisa) + enter para acessar o diretório com os arquivos que foram trazidos do GitHub para a pasta.
 
 ATUALIZAR ARQUIVOS ENTRE O COMPUTADOR E O GITHUB
+
+DRC: muito boa essa seção!
 
 Quando você fizer alterações em algum dos arquivos que estão na pasta ou no GitHub, você precisa que ele esteja atualizado em ambos os locais. Sendo assim, siga os passos após as alterações no arquivo:
 Atenção! Todos os passos abaixo são executados no terminal do GitHub:
@@ -55,6 +72,8 @@ E se for alterado o arquivo na plataforma do GitHub?
 É simples, basta digital [git pull] no terminal para trazer o arquivo atualizado da plataforma do GutHub para a pasta.
 
 QUERO CRIAR UMA CÓPIA DO MEU REPOSITÓRIO SEM ALTERAR O MEU ATUAL! É POSSÍVEL?
+
+DRC: excelente aqui também!
 
 Vamos voltar para a plataforma do Git Hub.
 Na parte superior esquerda você vai encontrar a opção de criar um branch, que significa o ramo do seu repositório. Esse ramo pode ser entendido como um “mundo paralelo” em que eu faço uma cópia do mundo em que eu estava e começo uma nova vida no outro, com os mesmos “personagens e cenários”, mas podendo agora dar outro rumo para a minha vida sem afetar o meu repositório inicial.
@@ -98,7 +117,7 @@ Para fazer o contrário e atualizar o Git Bash com a versão que sofreu alteraç
 FINALIZANDO A PRÁTICA
 
 Para finalizar voltamos para a interface principal do Git hub.
-1º Selecione Pull requests (Se você imaginar a tela do seu notebook como um plano cartesiano, dividindo-o nos eixos das ordenadas e das abcissas, a opção “Pull requests” estaria no segundo quadrante da sua tela.)
+1º Selecione Pull requests (Se você imaginar a tela do seu notebook como um plano cartesiano, dividindo-o nos eixos das ordenadas e das abcissas, a opção “Pull requests” estaria no segundo quadrante da sua tela.) DRC: excelente :)
 
 2º Após essa etapa, aperte New Pull request.
 Nesse ponto estamos na parte que vamos juntar as alterações dos dois ramos, podendo selecionar qual a direção que as alterações serão efetuadas.
@@ -108,7 +127,4 @@ Ainda a respeito do main, para efetivar suas alterações é necessário descrev
 
 Finalizando assim o passo a passo de como usufruir das funções básicas do Git hub. 😱
 
-
-
-
-
+DRC: muito bom. Senti falta de comentarem sobre forks.
